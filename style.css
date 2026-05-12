@@ -1,0 +1,148 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family:Arial, sans-serif;
+    background-color:#111;
+    color:white;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 10%;
+
+    background-color:black;
+
+    position:sticky;
+    top:0;
+}
+
+/* LOGO */
+.logo span{
+    color:orange;
+}
+
+/* NAVIGATION */
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+/* PSEUDOCLASS */
+nav a:hover{
+    color:orange;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url("images/photo1.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    width:70%;
+}
+
+/* HEADINGS */
+.hero h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+/* SECTIONS */
+section{
+    padding:60px 10%;
+}
+
+/* GALLERY */
+.gallery-container{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+/* IMAGES */
+.gallery-container img{
+    width:100%;
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    border:3px solid orange;
+
+    transition:0.4s;
+}
+
+/* HOVER EFFECT */
+.gallery-container img:hover{
+    transform:scale(1.05);
+}
+
+/* LISTS */
+ol,
+ul{
+    margin-top:15px;
+    margin-left:30px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+
+    padding:20px;
+
+    background-color:black;
+
+    margin-top:40px;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .hero h2{
+        font-size:35px;
+    }
+
+}
